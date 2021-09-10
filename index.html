@@ -7,6 +7,12 @@
 	<meta name='copyright' content=''>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--            Reacts and babel tags-->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	 <!-- BABEL LIBRARY -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+	<!--           End Reacts and babel tags-->
 	<!-- Title Tag  -->
     <title>Bienvenu Chez marry Market.</title>
 	<!-- Favicon -->
@@ -48,48 +54,35 @@
 <body class="js">
 	
 	<!-- Preloader -->
-	<div class="preloader">
-		<div class="preloader-inner">
-			<div class="preloader-icon">
+	<div class='preloader'>
+		<div class='preloader-inner'>
+			<div class='preloader-icon'>
 				<span></span>
 				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class='text-center'>
+					<h1>Mary Market, pour l'innovation</h1>
+				</div>
 			</div>
 		</div>
 	</div>
+	
+	
 	<!-- End Preloader -->
 	
 	
 	<!-- Header -->
 	<header class="header shop">
 		<!-- Topbar -->
-		<div class="topbar">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-12 col-12">
-						<!-- Top Left -->
-						<div class="top-left">
-							<ul class="list-main">
-								<li><i class="ti-headphone-alt"></i> +221704519370</li>
-								<li><i class="ti-email"></i> support@marrymarket.com</li>
-							</ul>
-						</div>
-						<!--/ End Top Left -->
-					</div>
-					<div class="col-lg-7 col-md-12 col-12">
-						<!-- Top Right -->
-						<div class="right-content">
-							<ul class="list-main">
-								
-								
-								<li><i class="ti-user"></i> <a href="#">Mon compte</a></li>
-								<li><i class="ti-power-off"></i><a href="login.html#">Se connecter</a></li>
-							</ul>
-						</div>
-						<!-- End Top Right -->
-					</div>
-				</div>
-			</div>
-		</div>
+		<div id="topbar"></div>
+		<script type="text/babel" src="./js/components/Header/Topbar.js"></script>
+	
+		
 		<!-- End Topbar -->
 		<div class="middle-inner">
 			<div class="container">
@@ -309,7 +302,7 @@
 				<!-- Single Banner  -->
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="single-banner">
-						<img src="./images/assets/electromenager/2.jpg" width="100" height="170" alt="#">
+						<img src="./images/assets/electromenager/1.jpg" width="100" height="170" alt="#">
 						<div class="content" style="top: 80%; left: 50%; transform: translate(-50%, -50%); color: orange;">
 							
 							
@@ -373,217 +366,359 @@
 							</div>
 							<div class="tab-content" id="myTabContent">
 								<!-- Start Single Tab -->
-								<div class="tab-pane fade show active" id="man" role="tabpanel">
-									<div class="tab-single">
-										<div class="row">
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/electromenager/1.jpg" alt="#">
+								<div class='tab-pane fade show active' id='man' role='tabpanel'>
+									<div class='tab-single'>
+										<div class='row'>
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/1.jpg'
+																alt='#'
+															/>
+														</a>
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
+															</div>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>Le batteur Electrique</a>
+														</h3>
+														<div class='product-price'>
+															<span>7900 FCFA</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/2.jpg'
+																alt='#'
+															/>
+														</a>
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
+															</div>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>Hachoir Electrique – Viande et Légumes - multicolores</a>
+														</h3>
+														<div class='product-price'>
+															<span>8900 FCFA</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/3.jpg'
+																alt='#'
+															/>
+														</a>
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
+															</div>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>Pompe à Eau Electrique – Sans fil – USB rechargeable</a>
+														</h3>
+														<div class='product-price'>
+															<span>11500 FCFA</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/4.jpg'
+																alt='#'
+															/>
+						
+															<span class='new'>New</span>
+														</a>
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
 															
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																
 															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
 															</div>
 														</div>
 													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Pack de six spatules</a></h3>
-														<div class="product-price">
-															<span>12000 FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/electromenager/2.jpg" alt="#">
-															
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Fer à Repasser</a></h3>
-														<div class="product-price">
-															<span>12000 FCFA</span>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>Fer à Repasser à Vapeur</a>
+														</h3>
+														<div class='product-price'>
+															<span>11500 FCFA</span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/electromenager/3.jpg" alt="#">
-															
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/5.jpg'
+																alt='#'
+															/>
 														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
 															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
 															</div>
 														</div>
 													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">j'ai oublié le nom</a></h3>
-														<div class="product-price">
-															<span>12000 FCFA</span>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>Batteur Electrique avec Bol 2Litres 250W–7 Vitesses</a>
+														</h3>
+														<div class='product-price'>
+															<span>12900 FCFA</span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/electromenager/4.jpg" alt="#">
-														
-															<span class="new">New</span>
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/6.jpg'
+																alt='#'
+															/>
+						
+															<span class='price-dec'>-20%</span>
 														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
 															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
 															</div>
 														</div>
 													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Nom Après</a></h3>
-														<div class="product-price">
-															<span>12000 FCFA</span>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>4 en 1 à Panini et Croque-monsieur en Acier Inoxydable, 750W, Noir</a>
+														</h3>
+														<div class='product-price'>
+															<span>16900 FCFA</span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/electromenager/5.jpg" alt="#">
-															
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/7.jpg'
+																alt='#'
+															/>
 														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
 															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
 															</div>
 														</div>
 													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Range Ustensiles Cuisine</a></h3>
-														<div class="product-price">
-															<span>12000 FCFA</span>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>Generic Blender Mixeur Presse Agrumes Multifonctions – Acier Inoxydable 1000W</a>
+														</h3>
+														<div class='product-price'>
+															<span>47000 FCFA</span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/electromenager/6.jpg" alt="#">
-															
-															<span class="price-dec">-20%</span>
+											<div class='col-xl-3 col-lg-4 col-md-4 col-12'>
+												<div class='single-product'>
+													<div class='product-img'>
+														<a href='product-details.html'>
+															<img
+																class='default-img'
+																src='./images/assets/electromenager/8.jpg'
+																alt='#'
+															/>
+						
+															<span class='out-of-stock'>Hot</span>
 														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																
+														<div class='button-head'>
+															<div class='product-action'>
+																<a
+																	data-toggle='modal'
+																	data-target='#exampleModal'
+																	title='Quick View'
+																	href='#'
+																>
+																	<i class=' ti-eye'></i>
+																	<span>Acheter</span>
+																</a>
+																<a title='Wishlist' href='#'>
+																	<i class=' ti-heart '></i>
+																	<span>Ajouter pour plus tard</span>
+																</a>
 															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Machine à Café Expresso</a></h3>
-														<div class="product-price">
-															<span>12000 FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/cuisine/1.jpg" alt="#">
-														
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
+															<div class='product-action-2'>
+																<a title='Add to cart' href='#'>
+																	Panier
+																</a>
 															</div>
 														</div>
 													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Range Ustensiles</a></h3>
-														<div class="product-price">
-															<span>12000 FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div class="single-product">
-													<div class="product-img">
-														<a href="product-details.html">
-															<img class="default-img" src="./images/assets/Armoires_A_Chaussures/2.jpg" alt="#">
-														
-															<span class="out-of-stock">Hot</span>
-														</a>
-														<div class="button-head">
-															<div class="product-action">
-																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
-																<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-																
-															</div>
-															<div class="product-action-2">
-																<a title="Add to cart" href="#">Panier</a>
-															</div>
-														</div>
-													</div>
-													<div class="product-content">
-														<h3><a href="product-details.html">Armoire A chaussures 36 pairs</a></h3>
-														<div class="product-price">
-															<span class="old">18000 FCFA</span>
-															<span>15000 FCFA</span>
+													<div class='product-content'>
+														<h3>
+															<a href='product-details.html'>
+																Thermos 1.9 Litre – Inox
+															</a>
+														</h3>
+														<div class='product-price'>
+															<span class='old'>8000 FCFA</span>
+															<span>6900 FCFA</span>
 														</div>
 													</div>
 												</div>
@@ -591,6 +726,9 @@
 										</div>
 									</div>
 								</div>
+								
+
+
 								<!--/ End Single Tab -->
 								<!-- Start Single Tab -->
 								<div class="tab-pane fade" id="women" role="tabpanel">
@@ -1701,25 +1839,7 @@
 	<!-- End Product Area -->
 	
 	<!-- Start Midium Banner  -->
-	<section class="midium-banner">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-6 col-md-6 col-12">
-					<div class="single-banner">
-						<img src="https://via.placeholder.com/600x370" alt="#">
-						<div class="content">
-							<p>shoes women</p>
-							<h3>mid season <br> up to <span>70%</span></h3>
-							<a href="#" class="btn">Shop Now</a>
-						</div>
-					</div>
-				</div>
-				<!-- /End Single Banner  -->
-			</div>
-		</div>
-	</section>
-	<!-- End Midium Banner -->
+
 	
 	<!-- Start Most Popular -->
 	<div class="product-area most-popular section">
@@ -1738,7 +1858,7 @@
 						<div class="single-product">
 							<div class="product-img">
 								<a href="product-details.html">
-									<img class="default-img" src="./images/assets/Armoires_A_Chaussures/4.jpg" alt="#">
+									<img class="default-img" src="./products/produitsChics/imgProduitsChics/1.jpg" alt="#">
 									
 									<span class="out-of-stock">Hot</span>
 								</a>
@@ -1754,10 +1874,10 @@
 								</div>
 							</div>
 							<div class="product-content">
-								<h3><a href="product-details.html">Armoire A chaussures</a></h3>
+								<h3><a href="product-details.html">chaise enfant</a></h3>
 								<div class="product-price">
-									<span class="old">20000 FCFA</span>
-									<span>12000 FCFA</span>
+									<span class="old">27000 FCFA</span>
+									<span>24000 FCFA</span>
 								</div>
 							</div>
 						</div>
@@ -1766,7 +1886,7 @@
 						<div class="single-product">
                             <div class="product-img">
                                 <a href="product-details.html">
-                                  <img class="default-img" src="./images/assets/electromenager/2.jpg" alt="#">
+                                  <img class="default-img" src="./products/produitsChics/imgProduitsChics/2.jpg" alt="#">
                                 </a>
 								<div class="button-head">
 									<div class="product-action">
@@ -1780,9 +1900,9 @@
 								</div>
                             </div>
                             <div class="product-content">
-                                <h3><a href="product-details.html">Armoire A chaussures</a></h3>
+                                <h3><a href="product-details.html">Moule à gâteau 3 formes 24/26/28 cm</a></h3>
                                 <div class="product-price">
-                                    <span>12000 FCFA</span>
+                                    <span>5500 FCFA</span>
                                 </div>
                             </div>
                         </div>
@@ -1791,14 +1911,14 @@
 						<div class="single-product">
                             <div class="product-img">
                                 <a href="product-details.html">
-																	<img class="default-img" src="./images/assets/cuisine/2.jpg" alt="#">
+																	<img class="default-img" src="./products/produitsChics/imgProduitsChics/3.jpg" alt="#">
 									<span class="new">New</span>
                                 </a>
 								<div class="button-head">
 									<div class="product-action">
 										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
 										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+										
 									</div>
 									<div class="product-action-2">
 										<a title="Add to cart" href="#">Panier</a>
@@ -1806,9 +1926,10 @@
 								</div>
                             </div>
                             <div class="product-content">
-                                <h3><a href="product-details.html">Armoire A chaussures</a></h3>
+                                <h3><a href="product-details.html">'Nier Dicer Quick 5 en 1',
+																</a></h3>
                                 <div class="product-price">
-                                    <span>20000 FCFA</span>
+                                    <span>2900 FCFA</span>
                                 </div>
                             </div>
                         </div>
@@ -1823,7 +1944,7 @@
 									<div class="product-action">
 										<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Acheter</span></a>
 										<a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Ajouter pour plus tard</span></a>
-										<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+									
 									</div>
 									<div class="product-action-2">
 										<a title="Add to cart" href="#">Add to cart</a>
@@ -1831,9 +1952,9 @@
 								</div>
                             </div>
                             <div class="product-content">
-                                <h3><a href="product-details.html">Awesome Bags Collection</a></h3>
+                                <h3><a href="product-details.html">SPATULE Lot de 6 Ustensiles de Cuisine</a></h3>
                                 <div class="product-price">
-                                    <span>$50.00</span>
+                                    <span>2000 FCFA</span>
                                 </div>
                             </div>
                         </div>
@@ -1864,14 +1985,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/electromenager/2.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/1.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h4 class="title"><a href="#">Fer à repasser</a></h4>
-									<p class="price with-discount">12000 FCFA</p>
+									<h4 class="title"><a href="#">Égouttoir pour Vaisselles en Plastique de 2 Compartiments</a></h4>
+									<p class="price with-discount">5500 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -1882,14 +2003,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/electromenager/3.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/2.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Étagère de salle de bain en métal</a></h5>
+									<p class="price with-discount">12900 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -1900,14 +2021,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/electromenager/4.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/3.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Support de Range cuisine</a></h5>
+									<p class="price with-discount">38900 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -1927,14 +2048,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/electromenager/5.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/4.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Égouttoir Vaisselle Inox</a></h5>
+									<p class="price with-discount">16900 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -1945,14 +2066,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/electromenager/6.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/5.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Egouttoir vaisselle</a></h5>
+									<p class="price with-discount">7900 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -1963,14 +2084,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/cuisine/1.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/6.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Sèche-Linge – Pliable – Blanc</a></h5>
+									<p class="price with-discount">14000 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -1990,14 +2111,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/cuisine/2.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/7.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Mug Isotherme Portable + Thermos à Chaud 24h + Bouilloire Électrique 2 L</a></h5>
+									<p class="price with-discount">10900 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -2008,14 +2129,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/Armoires_A_Chaussures/2.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/8.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Portable Mixeur des Fruits rechargeable avec USB,Mini Blender – 380 ml – Bleu</a></h5>
+									<p class="price with-discount">10900 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -2026,14 +2147,14 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="list-image overlay">
-									<img src="./images/assets/Armoires_A_Chaussures/3.jpg" alt="#">
+									<img src="./products/EnVogue/imgEnVogue/9.jpg" alt="#">
 									<a href="#" class="buy"><i class="fa fa-shopping-bag"></i></a>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12 no-padding">
 								<div class="content">
-									<h5 class="title"><a href="#">Le nom après</a></h5>
-									<p class="price with-discount">12000 FCFA</p>
+									<h5 class="title"><a href="#">Batteur électrique</a></h5>
+									<p class="price with-discount">11000 FCFA</p>
 								</div>
 							</div>
 						</div>
@@ -2119,92 +2240,19 @@
     <!-- Modal end -->
 	
 	<!-- Start Footer Area -->
-	<footer class="footer">
-		<!-- Footer Top -->
-		<div class="footer-top section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer about">
-							<div class="logo">
-								<h5>marry Market</h5>
-							</div>
-							<p class="text">Votre satisfaction est notre raison d'être. Nous sommes pour l'innovation, toujours plus loin, toujout plus hauts, toujours plus fort</p>
-							<p class="call">vous avez une Question ? appelez 24/7<span><a href="tel:123456789">+221704519370</a></span></p>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-					<div class="col-lg-2 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer links">
-							<h4>Information</h4>
-							<ul>
-								<li><a href="#">A propos</a></li>
-							
-								<li><a href="#">Nous contacter</a></li>
-								<li><a href="#">Aide</a></li>
-							</ul>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-					<div class="col-lg-2 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer links">
-							<h4>Service Client</h4>
-							<ul>
-								<li><a href="#">Payement</a></li>
-								
-								<li><a href="#">Retourner un produit</a></li>
-								<li><a href="#">Livraison</a></li>
-							
-							</ul>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer social">
-							<h4>Get In Tuch</h4>
-							<!-- Single Widget -->
-							<div class="contact">
-								<ul>
-									<li>Parcelle Assaines .</li>
-									<li>Marché unité 17 place 40.</li>
-									<li>info@marrymarket.com</li>
-									<li>+221704519370</li>
-								</ul>
-							</div>
-							<!-- End Single Widget -->
-							<ul>
-								<li><a href="#"><i class="ti-facebook"></i></a></li>
-								<li><a href="#"><i class="ti-twitter"></i></a></li>
-								<li><a href="#"><i class="ti-flickr"></i></a></li>
-								<li><a href="#"><i class="ti-instagram"></i></a></li>
-							</ul>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Footer Top -->
-		<div class="copyright text-center">
-			<div class="container">
-				<div class="inner">
-					<div class="row text-center">
-						<div class="col-lg-6 col-12 ">
-							<div class="">
-								<p>Copyright © 2021 made with <i class="fa fa-heart"></i><a href="https://github.com/tafa1618" target="_blank"> by Tapha Gaye</a>  -  All Rights Reserved.</p>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<div id="footer"></div>
 	<!-- /End Footer Area -->
+
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	 <!-- BABEL LIBRARY -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+	<!-- React Components-->
+		<script type="text/babel" src="./js/components/Footer.js"></script>
+		<script type="text/babel" src="./js/components/Header/Topbar.js"></script>
+		
+
+	<!--End React Components-->
  
 	<!-- Jquery -->
     <script src="js/jquery.min.js"></script>

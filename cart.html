@@ -7,6 +7,12 @@
 	<meta name='copyright' content=''>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<!--            Reacts and babel tags-->
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	 <!-- BABEL LIBRARY -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+	<!--           End Reacts and babel tags-->
 	<!-- Title Tag  -->
     <title>Eshop - eCommerce HTML5 Template.</title>
 	<!-- Favicon -->
@@ -48,11 +54,24 @@
 <body class="js">
 	
 	<!-- Preloader -->
-	<div class="preloader">
-		<div class="preloader-inner">
-			<div class="preloader-icon">
+	<div class='preloader' id="preloader">
+		<div class='preloader-inner'>
+			<div class='preloader-icon'>
 				<span></span>
 				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class='text-cent'>
+					<h1>Mary Market, pour l'innovation</h1>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -61,34 +80,8 @@
 		<!-- Header -->
 		<header class="header shop">
 	<!-- Topbar -->
-	<div class="topbar">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-12 col-12">
-					<!-- Top Left -->
-					<div class="top-left">
-						<ul class="list-main">
-							<li><i class="ti-headphone-alt"></i> +221704519370</li>
-							<li><i class="ti-email"></i> support@marrymarket.com</li>
-						</ul>
-					</div>
-					<!--/ End Top Left -->
-				</div>
-				<div class="col-lg-7 col-md-12 col-12">
-					<!-- Top Right -->
-					<div class="right-content">
-						<ul class="list-main">
-							
-							
-							<li><i class="ti-user"></i> <a href="#">Mon compte</a></li>
-							<li><i class="ti-power-off"></i><a href="login.html#">Se connecter</a></li>
-						</ul>
-					</div>
-					<!-- End Top Right -->
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="topbar"></div>
+		<script type="text/babel" src="./js/components/Header/Topbar.js"></script>
 	<!-- End Topbar -->
 			<div class="middle-inner">
 				<div class="container">
@@ -564,93 +557,14 @@
         <!-- Modal end -->
 	
 	<!-- Start Footer Area -->
-	<footer class="footer">
-		<!-- Footer Top -->
-		<div class="footer-top section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer about">
-							<div class="logo">
-								<h5>marry Market</h5>
-							</div>
-							<p class="text">Votre satisfaction est notre raison d'être. Nous sommes pour l'innovation, toujours plus loin, toujout plus hauts, toujours plus fort</p>
-							<p class="call">vous avez une Question ? appelez 24/7<span><a href="tel:123456789">+221704519370</a></span></p>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-					<div class="col-lg-2 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer links">
-							<h4>Information</h4>
-							<ul>
-								<li><a href="#">A propos</a></li>
-							
-								<li><a href="#">Nous contacter</a></li>
-								<li><a href="#">Aide</a></li>
-							</ul>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-					<div class="col-lg-2 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer links">
-							<h4>Service Client</h4>
-							<ul>
-								<li><a href="#">Payement</a></li>
-								
-								<li><a href="#">Retourner un produit</a></li>
-								<li><a href="#">Livraison</a></li>
-							
-							</ul>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<!-- Single Widget -->
-						<div class="single-footer social">
-							<h4>Get In Tuch</h4>
-							<!-- Single Widget -->
-							<div class="contact">
-								<ul>
-									<li>Parcelle Assaines .</li>
-									<li>Marché unité 17 place 40.</li>
-									<li>info@marrymarket.com</li>
-									<li>+221704519370</li>
-								</ul>
-							</div>
-							<!-- End Single Widget -->
-							<ul>
-								<li><a href="#"><i class="ti-facebook"></i></a></li>
-								<li><a href="#"><i class="ti-twitter"></i></a></li>
-								<li><a href="#"><i class="ti-flickr"></i></a></li>
-								<li><a href="#"><i class="ti-instagram"></i></a></li>
-							</ul>
-						</div>
-						<!-- End Single Widget -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Footer Top -->
-		<div class="copyright text-center">
-			<div class="container">
-				<div class="inner">
-					<div class="row text-center">
-						<div class="col-lg-6 col-12 ">
-							<div class="">
-								<p>Copyright © 2021 made with <i class="fa fa-heart"></i><a href="https://github.com/tafa1618" target="_blank"> by Tapha Gaye</a>  -  All Rights Reserved.</p>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<div id="footer"></div>
 	<!-- /End Footer Area -->
 	
+	<!-- React Components-->
+	<script type="text/babel" src="./js/components/Footer.js"></script>
+	
+	<!-- End React Components-->
+
 	<!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>
